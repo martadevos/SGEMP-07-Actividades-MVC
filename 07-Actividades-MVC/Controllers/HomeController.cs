@@ -30,8 +30,14 @@ namespace _07_Actividades_MVC.Controllers
             fecha = DateTime.Now.ToString();
             ViewBag.Fecha = fecha;
 
+            clsPersona persona = new clsPersona();
 
-            return View();
+            persona.nombre = "Marta";
+            persona.apellido = "Devos";
+            persona.direccion = "Gelves";
+            persona.telefono = "656677667";
+
+            return View(persona);
         }
         
     }
